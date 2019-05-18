@@ -1,0 +1,153 @@
+
+#vid{
+  position :absolute;
+  top:0;
+  left:0;
+}
+#imgs{
+  position :absolute;
+  top:0;
+  left:260;
+}
+#centerdiv{
+  position : absolute;
+    top:160;
+    left:270px;
+	display:none;
+  }
+ #countdown{
+  position : absolute;
+  top : 90;
+  left : 80;
+  color :white;
+  font-size: 34px;
+  text-align: center;
+  width:40px;
+  height:40px;
+  border-radius: 20px;
+  border : 3px solid white;
+  display:none;
+}
+
+video , #container{
+  background-color: black;
+}
+
+video{
+	position:absolute;
+	top:20;
+	left:0;
+    object-fit: fill;
+}
+canvas{
+    width:200px;
+    height:224px;
+}
+
+#container{
+    margin-top:-4.5px;
+    width:200px;
+    height:224px;
+    position: absolute;
+	top:25;
+	left:260px;
+    float:left;
+}
+
+#cadre {
+    position: absolute;
+    top: 10;
+    left:10;
+    width:50;
+    height:50;
+    filter: brightness(40%);
+    border: 2px dotted gray;
+    display:none;
+  }
+  
+  .corner{
+    position: absolute;
+    width:5px;
+    height: 5px;
+    background-color : black;
+  }
+  .tl{
+    top : 0;
+    left : 0;
+    cursor: nwse-resize;
+
+}
+.tr{
+    top : 0;
+    right : 0;
+    cursor: nesw-resize;
+
+}
+.br{
+    bottom : 0;
+    right : 0;
+    cursor: nwse-resize;
+
+}
+.bl{
+    bottom : 0;
+    left : 0;
+    cursor: nesw-resize;
+
+}
+.tc{
+    top : 0;
+    left : 50%;
+    cursor: ns-resize;
+
+}
+.bc{
+    bottom : 0;
+    left : 50%;
+    cursor: ns-resize;
+
+}
+.lc{
+    top : 50%;
+    left : 0;
+    cursor: ew-resize;
+
+}
+.rc{
+    top : 50%;
+    right : 0;
+    cursor: ew-resize;
+}
+
+#opvid{
+	position:absolute;
+	top:250;
+	left : 0;
+}
+#opimg{
+	position:absolute;
+	top:250;
+	left : 260;
+}
+#filt{
+	position:absolute;
+	top:140;
+	left : 600;
+}
+
+.txt{
+	font: 20px Georgia;
+	
+}
+.txt2{
+	font: 20px Georgia;
+	font-weight:bold;
+}
+body{
+  background: url('https://www.publicdomainpictures.net/pictures/80000/velka/rainbow-ribbon-background-1393277149gAj.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  }

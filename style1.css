@@ -1,0 +1,65 @@
+
+.camera{
+    width: 200px;
+    background-color: rgb(144, 143, 238);
+    color: white;
+  
+    font: 15px Georgia;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+   align-items: center;
+   top: 50%;
+   left: 50%;
+   position: relative;
+   left: 50%; /* the left edge of the button is now in the center of the parent element. Now we need to nudge the button back to the left by 50% of the button width to make it center aligned. */
+   margin-left: -100px;
+}
+.camera2{
+    width: 200px;
+    background-color: rgb(144, 143, 238);
+    color: white;
+   padding: 15px 20px;
+    font: 15px Georgia;
+    border-radius: 30px;
+    border: none;
+    
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+   
+}
+h1 {
+	display: inline;
+	position: relative;
+	font: 80px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+    color: rgba(0,0,255,0.5); 
+    text-align: center;
+    padding-left: 250px;
+}
+h1:after {
+	content: "Take Your Picture Now ";
+	position: absolute; left: 10px; top: 5px;
+    color: rgba(168, 199, 235, 0.5);   
+    text-align: center;
+    padding-left: 250px;
+}
+h5 {
+	position: relative;
+	font: 30px Georgia;
+	letter-spacing: 0px;
+    color: rgba(23, 23, 68, 0.904); 
+    padding-left: 500px;
+}
+h2 {
+	position: relative;
+	font: 20px Georgia;
+	letter-spacing: 0px;
+    color: rgba(63, 63, 148, 0.904); 
+    padding-left: 550px;
+}
+.smile{
+    padding-left: 600px;
+}

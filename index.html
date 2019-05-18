@@ -1,0 +1,76 @@
+<html>
+	<head>
+	<!--AIT LHADJ NOUHAILA -->
+	<meta charset="UTF-8">
+		<title>Projet Développement Multimédia !</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+	
+    	<h1>Take Your Picture Now!</h1>
+        <img src="pic.png" width="100" height="100">
+	     
+		<div id="interface1">
+		<button id="btni1" class="camera" onclick="displayInterface2()" >Photo</button>
+		<div>
+		<div id="centerdiv">
+				<span class="txt" id='vid'></span>
+									<span class="txt" id='imgs'></span>	
+			<video id="camera"  width="200" height="224" autoplay>
+			</video>
+			<span id="countdown"></span><br />
+			<div id='container'>
+
+				<canvas id="resultat" width="200" height="224"  >
+			</canvas>
+			<div id='cadre'>
+			<div class="corner tl"></div>
+			<div class="corner tr"></div>
+			<div class="corner bl"></div>
+			<div class="corner br"></div>
+			
+			<div class="corner tc"></div>
+			<div class="corner bc"></div>
+			<div class="corner lc"></div>
+			<div class="corner rc"></div>
+			</div></div>
+			
+				<div id="opvid">
+			<h3></h3>
+			<button class="camera2" onclick='capture()'>Capturer</button>
+
+				</div>
+				<div id="opimg">
+			<h3></h3>
+
+	<button class="camera2" onclick="showCarre(true)">Afficher Redimension</button><br /><br />
+<button class="camera2" onclick='recadrage()'>Redimension</button>
+<br />
+					
+				</div>
+				<div id="filt">
+				<h3 class="txt2">Filtrer l'image :</h3>
+					<table style="margin:auto;">
+						<tr>
+							<td class="txt">Luminosité :</td>
+							<td ><input id="fbrightness" type="number" min="0" max="200" step="1" value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr>
+						<tr>
+						<td class="txt">Contraste :</td>
+							<td ><input id="fcontrast" type="number" min="0" max="200" step="1" " value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr>
+						<tr>
+							<td class="txt">Saturation :</td>
+							<td><input id="fsaturate" type="number" min="0" max="200" step="1" " value="100" onchange="filtercanvas(this.id,this.value)" /></td>
+						</tr>
+					</table>
+					
+					<button class="camera2" onclick=' downloadImageBase64()'>Sauvegarder</button>
+
+				</div>
+				</div>
+
+		<script src="js/script.js" ></script>
+	</body>
+</html>
